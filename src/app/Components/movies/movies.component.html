@@ -1,0 +1,12 @@
+<h3>Quel est le film le plus vieux ?</h3>
+
+<div>{{result}}</div>
+<!-- <div>{{movies|json}}</div> -->
+<div class = "imgContainer">
+    <div class="film" (click)="check(movie)" *ngFor="let movie of movies" >
+        {{movie.primaryTitle}}<br/>
+        <div *ngIf="result">{{movie.startYear}}<br/></div>
+        <img width="100%" height="300" src="{{movie.image_url}}">
+    </div>
+</div>
+<div *ngIf="result" (click)="rejouer()">Rejouer</div>
