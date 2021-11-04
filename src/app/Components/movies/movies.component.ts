@@ -28,7 +28,7 @@ export class MoviesComponent implements OnInit {
     // this._api.GetMoviesDetails().pipe(
     //   timeout(2000),
     //   catchError(e => {
-         // do something on a timeout
+    //      do something on a timeout
     //     return of(null);
     //   }))
   };
